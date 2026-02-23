@@ -2,42 +2,43 @@
 
 import { useRef, useState } from "react"
 
+import config from "@/config"
+
 // <FAQ> component is a lsit of <Item> component
 // Just import the FAQ & add your FAQ content to the const faqList
 
 const faqList = [
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question: `Vad är ${config.appName} och vad kan jag hitta här?`,
     answer: (
       <p className="space-y-2 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-        porttitor, arcu at posuere imperdiet, magna augue tristique nibh, nec
-        faucibus ipsum felis ac neque. Phasellus at turpis at lorem tincidunt
-        venenatis. Suspendisse potenti. Morbi vitae ipsum ut justo tincidunt
-        consequat. Curabitur vulputate, ipsum non posuere luctus, lorem tortor
-        volutpat erat, at aliquet arcu urna id nibh.
+        Vi är en katalog dedikerad till utegym runt om i Sverige. Här kan du
+        hitta utegym nära dig, se vilken utrustning som finns på varje plats och
+        läsa om vad andra besökare tycker. Vårt mål är att göra det enkelt för
+        dig att hitta rätt utegym oavsett var du befinner dig.
       </p>
     ),
   },
   {
-    question: "Quis nostrud exercitation ullamco laboris?",
+    question: "Vem är den här katalogen till för?",
     answer: (
       <p className="space-y-2 leading-relaxed">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Katalogen är till för alla som vill träna utomhus – oavsett om du är
+        nybörjare eller van träningsentusiast. Kanske letar du efter ett utegym
+        nära jobbet, hemma eller på en ny ort du besöker. Vi hjälper dig att
+        snabbt hitta en plats som passar dina behov och din nivå.
       </p>
     ),
   },
   {
-    question: "Ut enim ad minim veniam, quis nostrud?",
+    question: `Varför ska jag använda ${config.appName} istället för en vanlig sökmotor?`,
     answer: (
       <p className="space-y-2 leading-relaxed">
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Aenean euismod, nibh in cursus
-        ullamcorper, ipsum sem gravida metus, eget pharetra nunc leo sed urna.
+        Till skillnad från en vanlig sökmotor är vi specialiserade på just
+        utegym och erbjuder kurerad, detaljerad information om varje plats. Du
+        slipper sålla igenom irrelevanta resultat och får istället en tydlig
+        överblick med foton, utrustningslistor och recensioner. Vi sparar tid åt
+        dig så att du kan fokusera på det viktiga – att komma ut och träna.
       </p>
     ),
   },

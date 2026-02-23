@@ -6,7 +6,7 @@ import Image from "next/image"
 const CardComponent = ({ item }) => {
   // Basic fields
   const title = item["title"] ?? "Missing title"
-  const imageUrl = "/icon lorem ipsum.jpg" // placeholder image
+  const imageUrl = "/icon.jpg"
   const category =
     item["category"] ?? item["categoryName"] ?? "Missing category"
 
