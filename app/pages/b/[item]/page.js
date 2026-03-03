@@ -133,9 +133,9 @@ export default async function ItemDetailPage(props) {
                   Om {foundItem.title}
                 </h2>
                 <p className="text-sm text-base-content/70 leading-relaxed">
-                  {foundItem.title} är en plats för hundar och deras ägare
+                  {foundItem.title} är en plats för {foundItem.categoryName}
                   {typeof totalScore === "number" && totalScore > 0
-                    ? `, stolt betygsatt ${totalScore.toFixed(1)}.`
+                    ? `, betygsatt ${totalScore.toFixed(1)}.`
                     : "."}
                   {foundItem.phone ? ` Ring oss på ${foundItem.phone}` : ""}
                   {fullAddress ? ` eller besök oss på ${fullAddress}.` : ""}
